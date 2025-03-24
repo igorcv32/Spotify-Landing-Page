@@ -48,6 +48,7 @@ body {
 .logo img {
     height: 40px;
     padding-left: 20px;
+
 }
 
 .nav-links {
@@ -172,7 +173,7 @@ body {
     padding: 0 20px;
 }
 
-.plan-card {
+.plan-card-individual, .plan-card-universitario, .plan-card-duo, .plan-card-family {
     background-color: var(--spotify-gray);
     padding: 30px;
     border-radius: 10px;
@@ -180,13 +181,29 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.plan-card:hover {
+.plan-card-individual:hover, .plan-card-universitario:hover, .plan-card-duo:hover, .plan-card-family:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.plan-card h3 {
+.plan-card-individual h3, .plan-card-universitario h3, .plan-card-duo h3, .plan-card-family h3 {
     font-size: 1.8rem;
     margin-bottom: 20px;
+}
+
+.plan-card-individual h3 {
+    color: #ffd2d7;
+}
+
+.plan-card-universitario h3 {
+    color: #c4b1d4;
+}
+
+.plan-card-duo h3 {
+    color: #ffc862;
+}
+
+.plan-card-family h3 {
+    color: #a5bbd1;
 }
 
 .price {
@@ -199,12 +216,12 @@ body {
     opacity: 0.8;
 }
 
-.plan-card ul {
+.plan-card-individual ul, .plan-card-universitario ul, .plan-card-duo ul, .plan-card-family ul {
     list-style: none;
     margin-bottom: 30px;
 }
 
-.plan-card ul li {
+.plan-card-individual ul li, .plan-card-universitario ul li, .plan-card-duo ul li, .plan-card-family ul li {
     margin: 15px 0;
     font-size: 1.1rem;
 }

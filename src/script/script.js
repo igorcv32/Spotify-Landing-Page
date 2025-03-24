@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Animação de hover para cards de planos
-    const planCards = document.querySelectorAll('.plan-card');
+    const planCards = document.querySelectorAll('.plan-card-individual, .plan-card-universitario, .plan-card-duo, .plan-card-family');
     planCards.forEach(card => {
         card.addEventListener('mouseenter', () => {
             card.style.transform = 'translateY(-10px)';
